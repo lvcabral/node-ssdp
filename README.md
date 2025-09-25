@@ -5,15 +5,15 @@ A node.js SSDP client and server library.
 ## Installation
 
 ```sh
-npm install node-ssdp
+npm install @lvcabral/node-ssdp
 ```
 
 There is another package called `ssdp` which is the original unmaintained version. Make sure to install `node-ssdp` instead.
 
 ## Usage - Client
 
-```javascript
-    var Client = require('node-ssdp').Client
+```js
+    var Client = require('@lvcabral/node-ssdp').Client
       , client = new Client();
 
     client.on('response', function (headers, statusCode, rinfo) {
@@ -30,8 +30,8 @@ There is another package called `ssdp` which is the original unmaintained versio
 
 ## Usage - Server
 
-```javascript
-    var Server = require('node-ssdp').Server
+```js
+    var Server = require('@lvcabral/node-ssdp').Server
       , server = new Server()
     ;
 
@@ -63,7 +63,7 @@ Take a look at `example` directory as well to see examples or client and server.
 
 ### Client
 
-```
+```js
 const Client = require('node-ssdp').Client
 const client = new Client({...})
 ```
@@ -75,8 +75,8 @@ const client = new Client({...})
 
 ### Server
 
-```
-const Server = require('node-ssdp').Server
+```js
+const Server = require('@lvcabral/node-ssdp').Server
 const server = new Server({...})
 ```
 
@@ -95,12 +95,12 @@ const server = new Server({...})
 - `adInterval` _Number_ `advertise` event frequency (ms). Default: 10 sec.
 - `ttl` _Number_ Packet TTL. Default: `1800`.
 
-### SSDP configuration:
+### SSDP configuration
+
 - `ssdpSig` _String_ SSDP signature. Default: `node.js/NODE_VERSION UPnP/1.1 node-ssdp/PACKAGE_VERSION`
 - `ssdpIp` _String_ SSDP multicast group. Default: `239.255.255.250`.
 - `ssdpPort` _Number_ SSDP port. Default: `1900`
 - `ssdpTtl` _Number_ Multicast TTL. Default: `4`
-
 
 ### Logging
 
@@ -109,7 +109,7 @@ You can enable logging via an environment variable `DEBUG`. Set `DEBUG=node-ssdp
 
 Alternatively, you can provide your own `customLogger` function, in which case the `DEBUG` environment variable will be ignored.
 
-# License
+## License
 
 (The MIT License)
 
