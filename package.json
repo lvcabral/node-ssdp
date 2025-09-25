@@ -1,5 +1,5 @@
 {
-  "name": "node-ssdp",
+  "name": "@lvcabral/node-ssdp",
   "description": "A node.js SSDP client and server library.",
   "keywords": [
     "ssdp",
@@ -10,21 +10,24 @@
     "chromecast",
     "iot"
   ],
-  "version": "4.0.1",
+  "version": "4.0.2",
   "author": "Ilya Shaisultanov <ilya.shaisultanov@gmail.com>",
+  "contributors": [
+    "Marcelo Cabral <marcelo@lvcabral.com>"
+  ],
   "dependencies": {
     "async": "^2.6.0",
     "bluebird": "^3.5.1",
     "debug": "^3.1.0",
     "extend": "^3.0.1",
-    "ip": "^1.1.5"
+    "ip": "^2.0.1"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/diversario/node-ssdp.git"
+    "url": "git+ssh://git@github.com/lvcabral/node-ssdp.git"
   },
   "bugs": {
-    "url": "https://github.com/diversario/node-ssdp/issues"
+    "url": "https://github.com/lvcabral/node-ssdp/issues"
   },
   "main": "./index",
   "engines": {
@@ -41,10 +44,12 @@
     "test": "mocha --exit --recursive test",
     "coverage": "istanbul cover node_modules/.bin/_mocha -- test/lib --recursive"
   },
-  "homepage": "https://github.com/diversario/node-ssdp#readme",
-  "directories": {
-    "example": "example",
-    "test": "test"
-  },
+  "homepage": "https://github.com/lvcabral/node-ssdp#readme",
+  "files": [
+    "lib",
+    "index.js",
+    "LICENSE.md",
+    "README.md"
+  ],
   "license": "MIT"
 }
