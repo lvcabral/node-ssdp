@@ -670,7 +670,7 @@ describe('Server', function () {
         'LOCATION: http://' + require('ip').address() + ':10293/upnp/desc.html',
         'CACHE-CONTROL: max-age=1800',
         //'DATE: Fri, 30 May 2014 15:07:26 GMT', we'll test for this separately
-        'SERVER: node.js/' + process.versions.node + ' UPnP/1.1 node-ssdp/' + moduleVersion,
+        'SERVER: node.js/' + process.versions.node + ' UPnP/1.1 @lvcabral/node-ssdp/' + moduleVersion,
         'EXT: ' // note the space
       ]
 
@@ -794,7 +794,7 @@ describe('Server', function () {
             'LOCATION: http://' + '192.168.1.' + sock + ':123/hello/there',
             'CACHE-CONTROL: max-age=1800',
             //'DATE: Fri, 30 May 2014 15:07:26 GMT', we'll test for this separately
-            'SERVER: node.js/' + process.versions.node + ' UPnP/1.1 node-ssdp/' + moduleVersion,
+            'SERVER: node.js/' + process.versions.node + ' UPnP/1.1 @lvcabral/node-ssdp/' + moduleVersion,
             'EXT: ' // note the space
           ]
 
@@ -865,7 +865,7 @@ describe('Server', function () {
         'LOCATION: http://' + require('ip').address() + ':10293/upnp/desc.html',
         'CACHE-CONTROL: max-age=1800',
         //'DATE: Fri, 30 May 2014 15:07:26 GMT', we'll test for this separately
-        'SERVER: node.js/' + process.versions.node + ' UPnP/1.1 node-ssdp/' + moduleVersion,
+        'SERVER: node.js/' + process.versions.node + ' UPnP/1.1 @lvcabral/node-ssdp/' + moduleVersion,
         'EXT: ' // note the space
       ]
 
@@ -938,7 +938,7 @@ describe('Server', function () {
         'LOCATION: http://' + require('ip').address() + ':10293/upnp/desc.html',
         'CACHE-CONTROL: max-age=1800',
         //'DATE: Fri, 30 May 2014 15:07:26 GMT', we'll test for this separately
-        'SERVER: node.js/' + process.versions.node + ' UPnP/1.1 node-ssdp/' + moduleVersion,
+        'SERVER: node.js/' + process.versions.node + ' UPnP/1.1 @lvcabral/node-ssdp/' + moduleVersion,
         'EXT: ', // note the space
         'FOO: bar',
         'BAZ: qux'
