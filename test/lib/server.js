@@ -2,7 +2,7 @@ require('../helper')
 
 var assert = require('chai').assert
 var expect = require('chai').expect
-var ip = require('ip')
+var ip = require('neoip')
 var os = require('os')
 
 var moduleVersion = require('../../package.json').version
@@ -667,7 +667,7 @@ describe('Server', function () {
         'HTTP/1.1 200 OK',
         'ST: uuid:f40c2981-7329-40b7-8b04-27f187aecfb5',
         'USN: uuid:f40c2981-7329-40b7-8b04-27f187aecfb5',
-        'LOCATION: http://' + require('ip').address() + ':10293/upnp/desc.html',
+        'LOCATION: http://' + require('neoip').address() + ':10293/upnp/desc.html',
         'CACHE-CONTROL: max-age=1800',
         //'DATE: Fri, 30 May 2014 15:07:26 GMT', we'll test for this separately
         'SERVER: node.js/' + process.versions.node + ' UPnP/1.1 @lvcabral/node-ssdp/' + moduleVersion,
@@ -862,7 +862,7 @@ describe('Server', function () {
         'HTTP/1.1 200 OK',
         'ST: urn:Manufacturer:device:*',
         'USN: uuid:f40c2981-7329-40b7-8b04-27f187aecfb5::urn:Manufacturer:device:*',
-        'LOCATION: http://' + require('ip').address() + ':10293/upnp/desc.html',
+        'LOCATION: http://' + require('neoip').address() + ':10293/upnp/desc.html',
         'CACHE-CONTROL: max-age=1800',
         //'DATE: Fri, 30 May 2014 15:07:26 GMT', we'll test for this separately
         'SERVER: node.js/' + process.versions.node + ' UPnP/1.1 @lvcabral/node-ssdp/' + moduleVersion,
@@ -935,7 +935,7 @@ describe('Server', function () {
         'HTTP/1.1 200 OK',
         'ST: urn:Manufacturer:device:*',
         'USN: uuid:f40c2981-7329-40b7-8b04-27f187aecfb5::urn:Manufacturer:device:*',
-        'LOCATION: http://' + require('ip').address() + ':10293/upnp/desc.html',
+        'LOCATION: http://' + require('neoip').address() + ':10293/upnp/desc.html',
         'CACHE-CONTROL: max-age=1800',
         //'DATE: Fri, 30 May 2014 15:07:26 GMT', we'll test for this separately
         'SERVER: node.js/' + process.versions.node + ' UPnP/1.1 @lvcabral/node-ssdp/' + moduleVersion,

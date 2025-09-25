@@ -10,7 +10,7 @@
     "chromecast",
     "iot"
   ],
-  "version": "4.0.3",
+  "version": "4.0.4",
   "author": "Ilya Shaisultanov <ilya.shaisultanov@gmail.com>",
   "contributors": [
     "Marcelo Cabral <marcelo@lvcabral.com>"
@@ -21,7 +21,7 @@
     "bluebird": "^3.5.1",
     "debug": "^3.1.0",
     "extend": "^3.0.1",
-    "ip": "^2.0.1"
+    "neoip": "^3.0.1"
   },
   "repository": {
     "type": "git",
