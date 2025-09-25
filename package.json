@@ -10,11 +10,12 @@
     "chromecast",
     "iot"
   ],
-  "version": "4.0.2",
+  "version": "4.0.3",
   "author": "Ilya Shaisultanov <ilya.shaisultanov@gmail.com>",
   "contributors": [
     "Marcelo Cabral <marcelo@lvcabral.com>"
   ],
+  "types": "./index.d.ts",
   "dependencies": {
     "async": "^2.6.0",
     "bluebird": "^3.5.1",
@@ -48,6 +49,7 @@
   "files": [
     "lib",
     "index.js",
+    "index.d.ts",
     "LICENSE.md",
     "README.md"
   ],
